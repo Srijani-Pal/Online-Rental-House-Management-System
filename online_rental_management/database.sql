@@ -1,0 +1,10 @@
+CREATE DATABASE rental_db;
+
+USE rental_db;
+
+CREATE TABLE houses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL
+);

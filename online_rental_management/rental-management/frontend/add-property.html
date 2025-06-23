@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamDwell | Add New Property</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <h1 class="logo"><i class="fas fa-home"></i> DreamDwell</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Properties</a></li>
+                    <li><a href="add-property.html">Add Property</a></li>
+                    <li><a href="book-property.html">Book Property</a></li>
+                    <li><a href="user-profile.html">Profile</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="addPropertySection" class="property-form-section">
+            <h2><i class="fas fa-plus-circle"></i> List Your Property</h2>
+            <form id="addPropertyForm">
+                <div class="form-group">
+                    <label for="title">Property Title:</label>
+                    <input type="text" id="title" placeholder="Spacious 2BHK with Balcony" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" placeholder="A detailed description of your property..." required></textarea>
+                </div>
+                <div class="form-group half-width">
+                    <label for="rent">Monthly Rent (₹):</label>
+                    <input type="number" id="rent" placeholder="e.g., 25000" required min="0">
+                </div>
+                <div class="form-group half-width">
+                    <label for="propertyType">Property Type:</label>
+                    <select id="propertyType" required>
+                        <option value="">Select Type</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="House">House</option>
+                        <option value="Villa">Villa</option>
+                        <option value="Condo">Condo</option>
+                        <option value="Studio">Studio</option>
+                    </select>
+                </div>
+                <div class="form-group third-width">
+                    <label for="bedrooms">Bedrooms:</label>
+                    <input type="number" id="bedrooms" placeholder="e.g., 2" min="0">
+                </div>
+                <div class="form-group third-width">
+                    <label for="bathrooms">Bathrooms:</label>
+                    <input type="number" id="bathrooms" placeholder="e.g., 2" min="0">
+                </div>
+                <div class="form-group third-width">
+                    <label for="areaSqFt">Area (sq. ft.):</label>
+                    <input type="number" id="areaSqFt" placeholder="e.g., 1200" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location (City/Neighborhood):</label>
+                    <input type="text" id="location" placeholder="e.g., Koramangala, Bangalore" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Full Address:</label>
+                    <input type="text" id="address" placeholder="Flat No. 101, Orchid Apt, Main Rd..." required>
+                </div>
+                <div class="form-group">
+                    <label for="imageUrl">Image URL:</label>
+                    <input type="url" id="imageUrl" placeholder="https://example.com/property_photo.jpg">
+                </div>
+                <div class="form-group half-width">
+                    <label for="ownerName">Owner Name:</label>
+                    <input type="text" id="ownerName" placeholder="Your Name" required>
+                </div>
+                <div class="form-group half-width">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="text" id="contactNumber" placeholder="e.g., +91 9876543210" required>
+                </div>
+                <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Submit Property</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 DreamDwell. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
